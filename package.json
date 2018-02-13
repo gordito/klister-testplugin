@@ -1,0 +1,19 @@
+{
+  "name": "klister-testplugin",
+  "version": "1.0.0",
+  "description": "Ett test",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gordito@github.com/gordito/klister-testplugin.git"
+  },
+  "author": "Robin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gordito/klister-testplugin/issues"
+  },
+  "homepage": "https://github.com/gordito/klister-testplugin#readme"
+}
