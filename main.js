@@ -5,21 +5,26 @@
 var Controller = null;
 var Session = null;
 
+var ret = {};
+ret.com = 'testplugin';
+ret.data = {};
+ret.data.test = 'hej hej 😁';
+
 function Init(c, s)
 {
 	Controller = c;
 	Session = s;
-	console.log('test plugin');
-	console.log(Controller);
-	console.log(Session);
 }
 
-function Run(com, req, resp)
+function Run(com)
 {
 	console.log('== TESTCOMMAND RUN ==');
 	console.log(com);
-	console.log(req);
-	console.log(resp);
+	// console.log(req);
+	// console.log(resp);
+
+	Session.Send(ret);
+	console.log('== TESTCOMMAND END ==');
 }
 
 module.exports = {
