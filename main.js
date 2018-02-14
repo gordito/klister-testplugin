@@ -23,7 +23,7 @@ function Init(controller)
 function Run(controller, session, command)
 {
 	console.log('== TESTCOMMAND RUN ==');
-	console.log(com);
+	console.log(command);
 	session.Send(ret);
 	console.log('== TESTCOMMAND END ==');
 }
