@@ -10,6 +10,16 @@ ret.com = 'testplugin';
 ret.data = {};
 ret.data.test = 'hej hej 😁';
 
+function Worker(c)
+{
+	Controller = c;
+
+	setInterval(function()
+	{
+		console.log('Gordito Testplugin worker thread ', new Date().toUTCString());
+	},1000);
+}
+
 function Init(c, s)
 {
 	Controller = c;
@@ -28,6 +38,7 @@ function Run(com)
 }
 
 module.exports = {
+	Worker,
 	Init,
 	Run
 };
